@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            var snelheid = window.prompt("Wat was u snelheid?");
+            if (snelheid >= 0) {
+                if (snelheid < 51) {
+                    document.write("U ontvangt geen boeten.")
+                } else if (snelheid > 50 && snelheid < 61 ) {
+                    document.write("U ontvangt een openstaande boeten van €70.")
+                } else if (snelheid > 60 && snelheid < 71 ) {
+                    document.write("U ontvangt een openstaande boeten van €90.")
+                } else {
+                    document.write("Meld u alstublieft op het politie bureau.")
+                }
+            }
+            else {
+                document.write("Verkeerde imput.")
+            }
+        </script>
+    </body>
+</html>

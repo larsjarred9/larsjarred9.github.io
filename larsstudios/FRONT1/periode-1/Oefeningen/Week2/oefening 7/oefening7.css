@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+a:link{
+    color:#fff;
+    background-color:#000;
+}
+a:hover{
+    color:#fff;
+    background-color:#000;
+}
+a:visited{
+    color:#fff;
+    background-color:#000;
+}
+a {
+    padding: 3px;
+}

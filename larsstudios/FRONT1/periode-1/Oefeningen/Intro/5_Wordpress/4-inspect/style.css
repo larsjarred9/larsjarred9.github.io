@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+html,body{
+    width:100%;
+    height:100%;
+}
+.container{
+    width:1024px;
+    background-color:#2D4617;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1{
+    color:#000;
+}
+.header{
+    font-size: 18px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    color:#A7F05F;
+}
+.wrapper{
+    background-color:#FFF;
+}
+.linkerzijde{
+    float:left;
+    width:46%;
+    margin-left:2%;
+}
+.uitleg{
+    background-color:#58D5DD;
+}
+.rechterzijde{
+    float:left;
+    width:46%;
+    margin-left:3%;
+}
+.footer{
+    clear:both;
+    padding:20px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        Left:<br>
+        <input type="input" name="left" id="left"><br><br>
+        Top:<br>
+        <input type="input" name="top" id="top"><br><br>
+        Width:<br>
+        <input type="input" name="width" id="width"><br><br>
+        Height:<br>
+        <input type="input" name="height" id=height><br><br>
+        Kleur:<br>
+        <input type="input" name="kleur" id="kleur"><br><br>
+        Tekst:<br>
+        <input type="input" name="tekst" id="tekst"><br><br>
+        <input type="button" value="Verstuurd" onclick="Go()">
+
+        <div id="div"></div>
+
+        <script>
+            function Go(){
+                var divel = document.getElementById('div');
+
+                var left = document.getElementById('left').value;
+                var top = document.getElementById('top').value;
+                var height = document.getElementById('height').value;
+                var width = document.getElementById('width').value;
+                var kleur = document.getElementById('kleur').value;
+                var tekst = document.getElementById("tekst").value;
+
+                if (left >= 0 && top >= 0 && height >= 0 && width >= 0) {
+
+                    divel.style.marginLeft = left + 'px'
+                    divel.style.marginTop = top + 'px'
+                    divel.style.width = width + 'px'
+                    divel.style.height= height + 'px'
+                    divel.style.backgroundColor = kleur
+                    divel.innerHTML = "<h2>" + tekst + "</h2>";
+                }
+                else {
+                    document.write("Je hebt een verkeerde input gegeven, probeer het opnieuw.")
+                }
+            }
+        </script>
+    </body>
+</html>

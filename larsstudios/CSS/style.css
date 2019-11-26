@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+.text-center {
+    text-align: center;
+}
+
+.brand-logo span {
+    color: white !important;
+    font-weight: normal !important;
+    border-style: solid;
+    padding: 3px;
+    border-width: 3px;
+    border-color: white;
+    font-size: 25px;
+}
+
+header {
+    min-height: 530px;
+    background-image: url('../images/ui/space.png');
+    background-size: cover;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: normal !important;
+}
+
+header p {
+    color: white !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: normal !important;
+}
+
+header h4 {
+    color: white !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: normal !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.footer-copyright span {
+    color: white !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: normal !important;
+    border-style: solid;
+    color: white;
+    padding: 2px;
+    border-width: 2px;
+    border-color: white;
+}
+
+.footer-copyright a {
+    color: white;
+}
+
+.materialboxed {
+    position: static;
+    opacity: 1 !important;
+    transition: none !important;
+    max-height: 300px;
+}
+
+.materialboxed:hover:not(.active) {
+    opacity: 1 !important;
+    transition: none !important;
+}
+
+#work {
+    margin-bottom: 75px;
+}
+
+a:hover {
+    color: #0b0c17;
+}
+
+a {
+    color: #3b407b;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: url("../images/ui/space.png") !important;
+    background-size: cover;
+}
+
+.center {
+    display: block;
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.work h4 {
+    color: #3f3844 !important;
+    font-style: normal;
+    letter-spacing: 0.025em;
+    font-weight: bolder;
+}
+
+.description {
+    color: #3f3844 !important;
+}
+
+.name p {
+    width: 70%;
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+}
+
+.image-boxed {
+    margin-top: 7px;
+    background-image: url('../images/ui/space.png');
+    background-size: cover;
+    position: static;
+}
+
+footer {
+    background-color: #3f3844 !important;
+}
+.project {
+    margin-top: 100px;
+}
+#lobwork {
+    background-color: #f8fafe;
+    padding-bottom: 25px;
+}
+#lobwork h4{
+    padding-top: 25px;
+}
+#verslag {
+    padding-bottom: 25px;
+}
+#weekplanning {
+    background-color: #f8fafe;
+    padding-bottom: 25px;
+}
+#weekplanning h4{
+    padding-top: 25px;
+}
+#lobwork a {
+    margin-top: 20px;
+}
+#verslag li {
+    list-style-type: square;
+}

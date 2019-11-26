@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Opdracht 2</title>
+    </head>
+    <body>
+        <script>
+            var datum = new Date();
+            var uur = datum.getHours();
+
+            if (uur >= 6 && uur < 12 ) {
+                document.write("Goedenmorgen")
+            } else if (uur >= 12 && uur < 18 ) {
+                document.write("Goedenmiddag")
+            } else if (uur >= 18 && uur < 23 ) {
+                document.write("Goedenavond")
+            } else {
+                document.write("Goedenacht")
+            }
+        </script>
+    </body>
+</html>

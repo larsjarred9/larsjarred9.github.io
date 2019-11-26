@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <img src="doggy1.jpg" alt="Dogg 1" id="hondje" />
+        <br/>
+        <input type="button" id="knop" value="Ruil hond om" onclick="wissel()" />
+        <script>
+            var isDoggy1 = true;
+            function wissel() {
+                var plaatje = document.getElementById('hondje');
+
+                if(isDoggy1) {
+                    plaatje.src = "doggy2.jpg"
+                    isDoggy1 = false;
+                }else {
+                    plaatje.src = "doggy1.jpg"
+                    isDoggy1 = true;
+                }
+            }
+        </script>
+    </body>
+</html>

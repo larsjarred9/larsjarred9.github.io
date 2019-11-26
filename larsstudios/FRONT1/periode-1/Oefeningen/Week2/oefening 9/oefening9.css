@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+
+p{
+    color:#302929;
+    background-color:bisque;
+    width:500px;
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size:14px;
+}
+
+#exoplaneet P {
+    background-color: lightblue;
+}
