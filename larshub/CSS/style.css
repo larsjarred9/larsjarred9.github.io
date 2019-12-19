@@ -1,0 +1,294 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/*-------------------------------------------*/
+
+/* [LOB] */
+
+#lobwork {
+    background-color: #f8fafe;
+    padding-bottom: 25px;
+}
+
+#lobwork h4 {
+    padding-top: 25px;
+}
+
+#lobwork a {
+    margin-top: 20px;
+}
+
+/* Verslag LOB  */
+
+#verslag {
+    padding-bottom: 25px;
+}
+
+#verslag li {
+    list-style-type: square;
+}
+
+/* Weekplanning LOB */
+
+#weekplanning {
+    background-color: #f8fafe;
+    padding-bottom: 25px;
+}
+
+#weekplanning h4 {
+    padding-top: 25px;
+}
+
+/* Kwaliteiten LOB */
+
+#kwaliteiten {
+    padding-bottom: 25px;
+}
+
+#kwaliteiten img {
+    max-width: 475px;
+    margin: 0 auto;
+}
+
+/* Doelenfoto LOB */
+
+#doel {
+    background-color: #f8fafe;
+    padding-bottom: 25px;
+}
+
+#doel img {
+    margin: 0 auto;
+}
+
+/* Elementen LOB */
+
+#elementen {
+    padding-bottom: 25px;
+}
+
+#elementen img {
+    margin: 0 auto;
+}
+
+/*-------------------------------------------*/
+
+/* [Algemeen] */
+
+/* navbar */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: url("../images/ui/space.png") !important;
+    background-size: cover;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Contact btn */
+
+#contact {
+    background-color: #f8fafe;
+    padding-bottom: 25px;
+}
+
+#contact h4 {
+    padding-top: 25px;
+}
+
+#contact a {
+    color: white;
+}
+
+#contact a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* footer */
+
+footer {
+    background-color: #3f3844 !important;
+}
+
+.footer-copyright span {
+    /* logo branding */
+    color: white !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: normal !important;
+    border-style: solid;
+    color: white;
+    padding: 2px;
+    border-width: 2px;
+    border-color: white;
+}
+
+.footer-copyright a {
+    color: white;
+}
+
+/* Space Btn */
+
+.image-boxed {
+    margin-top: 7px;
+    background-image: url('../images/ui/space.png');
+    background-size: cover;
+    position: static;
+}
+
+/* Work */
+
+#work {
+    margin-bottom: 75px;
+}
+
+.work h4 {
+    color: #3f3844 !important;
+    font-style: normal;
+    letter-spacing: 0.025em;
+    font-weight: bolder;
+}
+
+#work a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Brand Logo */
+
+.brand-logo span {
+    color: white !important;
+    font-weight: normal !important;
+    border-style: solid;
+    padding: 3px;
+    border-width: 3px;
+    border-color: white;
+    font-size: 25px;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Reusable Additions */
+
+.text-center {
+    /* Centreer tekst */
+    text-align: center;
+}
+
+.fix-margin {
+    /* Fix de margin */
+    margin-top: -25px;
+}
+
+.name p {
+    /* Geef pf namen een width */
+    width: 70%;
+}
+
+.center {
+    /* Centreer objecten */
+    display: block;
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.project {
+    /* Geef de pages een betere margin */
+    margin-top: 100px;
+}
+
+.materialboxed {
+    /* Image Hover */
+    position: static;
+    opacity: 1 !important;
+    transition: none !important;
+    max-height: 300px;
+}
+
+.materialboxed:hover:not(.active) {
+    /* Image not active */
+    opacity: 1 !important;
+    transition: none !important;
+}
+
+.shadow-sm {
+    /* boxshadow */
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+}
+
+/* Defalt Element Styles */
+
+h4 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: normal !important;
+}
+
+a {
+    color: #3b407b;
+}
+
+a:hover {
+    color: #0b0c17;
+}
+
+/*-------------------------------------------*/
+
+/* [Home] */
+
+/* Header */
+
+header {
+    min-height: 530px;
+    background-image: url('../images/ui/space.png');
+    background-size: cover;
+}
+
+header p {
+    color: white !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: normal !important;
+}
+
+header h4 {
+    color: white !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: normal !important;
+}
+
+.description {
+    color: #3f3844 !important;
+}
+
+/* Input Form */
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+    background-color: purple;
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+    border: 2px solid purple;
+}
+
+/*-------------------------------------------*/
