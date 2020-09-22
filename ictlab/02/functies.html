@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Functies</title>
+  </head>
+<body>
+  <script type="text/javascript">
+
+
+      var canvas = document.createElement('canvas'); // maak canvas element (zie https://www.w3schools.com/html/html5_canvas.asp)
+      canvas.width = canvas.height = 500;            // geef het een hoogte en breedte
+      var ctx = canvas.getContext('2d');             // referentie naar drawing context van canvas
+      document.body.appendChild(canvas);              // voeg canvas element toe aan de pagina
+
+    function drawCircle(kleur, x, y, r) {
+      ctx.beginPath();
+      ctx.fillStyle = kleur;
+      ctx.lineWidth = 2;
+      ctx.arc(x, y, r, 0, 2 * Math.PI);            // cirkel (https://www.w3schools.com/Tags/canvas_arc.asp)
+      ctx.fill();
+      ctx.stroke();
+    }
+    drawCircle('yellow', 50, 50, 40);
+    drawCircle('black', 35, 45, 5);
+    drawCircle('black', 65, 45, 5);
+  </script>
+</body>
+</html>
