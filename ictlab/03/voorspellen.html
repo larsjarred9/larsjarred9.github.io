@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <title>Voorspel de toekomst</title>
+</head>
+
+<body>
+    <script>
+
+        /*
+        Maak een functie 'vraagNaam' waarin de naam van de gebruiker wordt gevraagd.
+        Return de naam
+         */
+        function vraagNaam() {
+            let naam = prompt("Wat is je naam", "Naam");
+            if (naam != null) {
+                return naam;
+            }
+        }
+
+        /*
+        Maak een variabel 'gebruiker' waarin je de naam uit de functie 'vraagNaam' stopt
+         */
+        var gebruiker = vraagNaam();
+        /*
+        Gebruik document.write en zeg bv "Hallo Jan! We gaan de toekomst voorspellen!"
+         */
+        document.write('Hey ' + gebruiker + '! Laten we de toekomst gaan voorspellen!<br><br>')
+        /*
+        Maak een functie 'gebruikersVraag' waarin de gebruiker wordt gevraagd een vraag te stellen.
+        Return de vraag
+         */
+        function gebruikersVraag() {
+            let vraag = prompt("Stel je vraag!", "Vraag");
+            if (vraag != null) {
+                return vraag;
+            }
+        }
+        /*
+        Gebruik document.write en zeg bv "Ok Jan hier is de voorspelling"
+         */
+        document.write('Oke ' + gebruiker + '. Hier is de voorspelling op je vraag!<br><br>')
+        /*
+        Maak een variabel 'watWilJeWeten' waarin je de vraag uit de functie 'gebruikersVraag' stopt.
+         */
+        var watWilJeWeten = gebruikersVraag();
+        /*
+        Maak een variabel 'KiesVoorspelling' en geef deze een random nummer van 1 tot 8
+         */
+        var KiesVoorspelling = Math.floor(Math.random() * 8) + 1;
+        /*
+        Maak een lege variabel 'voorspelling', deze wordt gevuld met een random case uit de volgende switch
+         */
+        var voorspelling;
+        /*
+        Maak een switch(kiesVoorspelling) met 8 cases. bv voorspelling = 'Zou kunnen';
+         */
+        switch (KiesVoorspelling) {
+            case 1:
+                voorspelling = 'dat zou kunnen.';
+                break;
+            case 2:
+                voorspelling = 'waarschijnlijk wel.';
+                break;
+            case 3:
+                voorspelling = 'het is onmisbaar.';
+                break;
+            case 4:
+                voorspelling = 'erg twijfelachtig.';
+                break;
+            case 5:
+                voorspelling = 'het is onwaarschijnlijk.';
+                break;
+            case 6:
+                voorspelling = 'reken er maar niet op.';
+                break;
+            case 7:
+                voorspelling = 'het is zeker.';
+                break;
+            case 8:
+                voorspelling = 'absoluut niet.';
+                break;
+            default:
+                voorspelling = 'kan nu niet voorspellen.';
+        }
+        /*
+            Gebruik document.write en zeg bv "De voorspelling op de vraag: watWilJijWeten van gebruiker is voorspelling"
+         */
+         document.write('De voorspelling op de vraag "' + watWilJeWeten + '" van ' + gebruiker + ' is "' + voorspelling + '"')
+
+    </script>
+</body>
+
+</html>
