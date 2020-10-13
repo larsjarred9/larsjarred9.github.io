@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mondriaan</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--- we geven ons canvas de naam mijn Canvas-->
+        <canvas id="mijnCanvas" width="1000" height="1000" style="border:1px solid #000000;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+            
+            <script>
+            // Hieronder maken we een object van ons canvas en creëren we de (be)werkbare "context"
+            var canvasObject = document.getElementById("mijnCanvas");
+            var contextObject = canvasObject.getContext("2d");
+
+            contextObject.fillStyle = "#ff3b29";
+            contextObject.fillRect(100, 100, 525, 525);
+          
+            contextObject.fillStyle = "rgba(252,242,62,1)";
+            contextObject.fillRect(620, 0, 335, 355);
+
+            contextObject.fillStyle = "#000000";
+            contextObject.fillRect(100, 625, 280, 270);
+
+            contextObject.fillStyle = "#000000";
+            contextObject.fillRect(369, 885, 260, 85);
+
+            contextObject.fillStyle = "#ff3b29";
+            contextObject.fillRect(945, 765, 1000, 1000);
+
+            contextObject.fillStyle = "rgba(252,242,62,1)";
+            contextObject.fillRect(0, 760, 100, 1000);
+
+            contextObject.fillStyle = "rgba(5,64,132,1)";
+            contextObject.fillRect(625, 765, 320, 205);
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(15, 365);
+            contextObject.lineTo(100, 365);
+            contextObject.stroke();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(625, 360);
+            contextObject.lineTo(950, 360);
+            contextObject.stroke();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(375, 885);
+            contextObject.lineTo(630, 885);
+            contextObject.stroke();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(390, 965);
+            contextObject.lineTo(945, 965);
+            contextObject.stroke();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(372, 627);
+            contextObject.lineTo(370, 990);
+            contextObject.stroke();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(790, 360);
+            contextObject.lineTo(790, 625);
+            contextObject.stroke();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(10, 95);
+            contextObject.lineTo(950, 95);
+            contextObject.stroke();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(235, 10);
+            contextObject.lineTo(235, 95);
+            contextObject.stroke();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(95, 95);
+            contextObject.lineTo(95, 975);
+            contextObject.stroke();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(625, 4);
+            contextObject.lineTo(625, 970);
+            contextObject.stroke();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(100, 630);
+            contextObject.lineTo(955, 630);
+            contextObject.stroke();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(10, 765);
+            contextObject.lineTo(1000, 765);
+            contextObject.stroke();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(950, 20);
+            contextObject.lineTo(950, 990);
+            contextObject.stroke();
+            </script> 
+    </body>
+</html>
