@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>3d drawing</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--- we geven ons canvas de naam mijn Canvas-->
+        <canvas id="mijnCanvas" width="744" height="921" style="border:1px solid #000000;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+            
+            <script>
+            // Hieronder maken we een object van ons canvas en creëren we de (be)werkbare "context"
+            var canvasObject = document.getElementById("mijnCanvas");
+            var contextObject = canvasObject.getContext("2d");
+
+            contextObject.fillStyle = "rgba(225,200,139)";
+            contextObject.fillRect(0, 0, 744, 921);
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(190, 345);
+            contextObject.lineTo(295, 325);
+            contextObject.lineTo(295, 530);
+            contextObject.lineTo(190, 555);
+            contextObject.closePath();
+            contextObject.fillStyle = "white";
+            contextObject.fill();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(130, 290);
+            contextObject.lineTo(190, 345);
+            contextObject.lineTo(190, 555);
+            contextObject.lineTo(125, 500);
+            contextObject.closePath();
+            contextObject.fillStyle = "rgba(174,170,162)";
+            contextObject.fill();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(129, 292);
+            contextObject.lineTo(235, 265);
+            contextObject.lineTo(295, 325);
+            contextObject.lineTo(190, 345);
+            contextObject.closePath();
+            contextObject.fillStyle = "#000";
+            contextObject.fill();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(65, 200);
+            contextObject.lineTo(166, 282);
+            contextObject.lineTo(130, 292);
+            contextObject.lineTo(65, 243);
+            contextObject.closePath();
+            contextObject.fillStyle = "rgba(120,37,13)";
+            contextObject.fill();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(77, 263);
+            contextObject.lineTo(78, 251);
+            contextObject.lineTo(130, 292);
+            contextObject.lineTo(130, 300);
+            contextObject.closePath();
+            contextObject.fillStyle = "rgba(48,24,13)";
+            contextObject.fill();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(297, 401);
+            contextObject.lineTo(295, 371);
+            contextObject.lineTo(320, 360);
+            contextObject.lineTo(355, 386);
+            contextObject.closePath();
+            contextObject.fillStyle = "rgba(174,46,40)";
+            contextObject.fill();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(243, 415);
+            contextObject.lineTo(297, 400);
+            contextObject.lineTo(355, 385);
+            contextObject.lineTo(390, 410);
+            contextObject.lineTo(275, 445);
+            contextObject.closePath();
+            contextObject.fillStyle = "rgba(174,46,40)";
+            contextObject.fill();
+
+            // lijn
+            // contextObject.beginPath();
+            // contextObject.lineWidth = 10;
+            // contextObject.moveTo(15, 365);
+            // contextObject.lineTo(100, 365);
+            // contextObject.stroke();
+            </script> 
+    </body>
+</html>
