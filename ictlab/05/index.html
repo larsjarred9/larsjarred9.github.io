@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <h2>!Nog niet af!</h2>
+        <h2>Animatie ging hele tijd kapot dus kreeg ik niet voor elkaar, de rest werkt wel.</h2>
         <!--- we geven ons canvas de naam mijn Canvas-->
         <canvas id="mijnCanvas" width="744" height="921" style="border:1px solid #000000;">
             Your browser does not support the HTML5 canvas tag.</canvas>
@@ -143,12 +143,40 @@
             contextObject.fillStyle = "white";
             contextObject.fill();
 
-            // lijn
-            // contextObject.beginPath();
-            // contextObject.lineWidth = 10;
-            // contextObject.moveTo(15, 365);
-            // contextObject.lineTo(100, 365);
-            // contextObject.stroke();
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(405, 442);
+            contextObject.lineTo(490, 415);
+            contextObject.lineTo(305, 271);
+            contextObject.lineTo(260, 287);
+            contextObject.lineTo(235, 268);
+            contextObject.lineTo(322, 255);
+            contextObject.lineTo(529, 425)
+            contextObject.lineTo(442, 455)
+            contextObject.closePath();
+            contextObject.fillStyle = "rgba(129, 131, 126)";
+            contextObject.fill();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 3;
+            contextObject.moveTo(497, 382);
+            contextObject.lineTo(319,84);
+            contextObject.strokeStyle = 'rgba(162,128,67)';
+            contextObject.stroke();
+
+            contextObject.beginPath();
+            contextObject.lineWidth = 3;
+            contextObject.moveTo(315, 84);
+            contextObject.lineTo(325, 750);
+            contextObject.strokeStyle = 'rgba(162,128,67)';
+            contextObject.stroke();
+
+            contextObject.beginPath();
+            contextObject.fillStyle = "rgba(177,48,40)";
+            contextObject.strokeStyle = 'rgba(177,48,40)';
+            contextObject.arc(325, 774, 20, 0, 2 * Math.PI);
+            contextObject.fill();
+            contextObject.stroke();
             </script> 
     </body>
 </html>
