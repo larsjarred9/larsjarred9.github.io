@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html> 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>3d drawing</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <h2>Animatie ging hele tijd kapot dus kreeg ik niet voor elkaar, de rest werkt wel.</h2>
-        <!--- we geven ons canvas de naam mijn Canvas-->
-        <canvas id="mijnCanvas" width="744" height="921" style="border:1px solid #000000;">
-            Your browser does not support the HTML5 canvas tag.</canvas>
-            
-            <script>
-            // Hieronder maken we een object van ons canvas en creëren we de (be)werkbare "context"
-            var canvasObject = document.getElementById("mijnCanvas");
-            var contextObject = canvasObject.getContext("2d");
+<html>
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>3d drawing</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!--- we geven ons canvas de naam mijn Canvas-->
+    <canvas id="mijnCanvas" width="744" height="921" style="border:1px solid #000000;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+
+    <script>
+        // Hieronder maken we een object van ons canvas en creëren we de (be)werkbare "context"
+        var canvasObject = document.getElementById("mijnCanvas");
+        var contextObject = canvasObject.getContext("2d");
+        var balletjeY = 670;
+        var balletjeX = 694;
+
+        function drawboard() {
+            contextObject.fillStyle = "#fff";
+            contextObject.fillRect(0, 0, 744, 921);
             contextObject.fillStyle = "rgba(225,200,139)";
             contextObject.fillRect(0, 0, 744, 921);
 
@@ -112,7 +118,7 @@
             contextObject.closePath();
             contextObject.fillStyle = "rgba(174,46,40)";
             contextObject.fill();
-    
+
             contextObject.beginPath();
             contextObject.lineWidth = 10;
             contextObject.moveTo(362, 517);
@@ -126,7 +132,7 @@
             contextObject.beginPath();
             contextObject.lineWidth = 10;
             contextObject.moveTo(650, 710);
-            contextObject.lineTo(665,720);
+            contextObject.lineTo(665, 720);
             contextObject.lineTo(665, 758);
             contextObject.lineTo(648, 747);
             contextObject.closePath();
@@ -160,23 +166,40 @@
             contextObject.beginPath();
             contextObject.lineWidth = 3;
             contextObject.moveTo(497, 382);
-            contextObject.lineTo(319,84);
+            contextObject.lineTo(319, 84);
             contextObject.strokeStyle = 'rgba(162,128,67)';
             contextObject.stroke();
 
+            // Plant
+            balletjeY += 1;
+            balletjeX += 1;
+
+            if (balletjeY > 751) {
+                balletjeY = 670;
+            }
+            if (balletjeX > 775) {
+                balletjeX = 694;
+            }
+            // Balletje laten bewegen
             contextObject.beginPath();
             contextObject.lineWidth = 3;
             contextObject.moveTo(315, 84);
-            contextObject.lineTo(325, 750);
+            contextObject.lineTo(325, balletjeY);
             contextObject.strokeStyle = 'rgba(162,128,67)';
             contextObject.stroke();
 
             contextObject.beginPath();
             contextObject.fillStyle = "rgba(177,48,40)";
             contextObject.strokeStyle = 'rgba(177,48,40)';
-            contextObject.arc(325, 774, 20, 0, 2 * Math.PI);
+            contextObject.arc(325, balletjeX, 20, 0, 2 * Math.PI);
             contextObject.fill();
             contextObject.stroke();
-            </script> 
-    </body>
+
+            window.requestAnimationFrame(drawboard);
+        }
+        window.requestAnimationFrame(drawboard);
+
+    </script>
+</body>
+
 </html>
